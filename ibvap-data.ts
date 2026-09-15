@@ -1,0 +1,87 @@
+import type { CameraNode } from "./ibvap-types";
+
+export const CAMERAS: CameraNode[] = [
+  {
+    id: "BOP-01-N",
+    name: "BOP Alpha — North Tower",
+    sector: "Sector 4 / Fence Line",
+    location: "28.7041N 76.9187E",
+    status: "online",
+    fps: 24,
+    latencyMs: 180,
+    analytics: ["human", "intrusion", "night-movement"],
+    nightMode: true,
+  },
+  {
+    id: "CHK-07-G",
+    name: "Check Post Gamma — Gate",
+    sector: "Sector 2 / Vehicle Lane",
+    location: "28.6913N 76.8801E",
+    status: "online",
+    fps: 25,
+    latencyMs: 140,
+    analytics: ["vehicle", "anpr", "face"],
+    nightMode: false,
+  },
+  {
+    id: "RD-12-E",
+    name: "Border Road 12 — East Bend",
+    sector: "Sector 5 / Patrol Road",
+    location: "28.7325N 76.9502E",
+    status: "degraded",
+    fps: 14,
+    latencyMs: 620,
+    analytics: ["vehicle", "human", "loitering"],
+    nightMode: true,
+  },
+  {
+    id: "BOP-03-S",
+    name: "BOP Delta — South Culvert",
+    sector: "Sector 6 / Culvert",
+    location: "28.6604N 76.9975E",
+    status: "online",
+    fps: 20,
+    latencyMs: 210,
+    analytics: ["intrusion", "human", "night-movement"],
+    nightMode: true,
+  },
+  {
+    id: "OBS-09-W",
+    name: "Observation Post — West Ridge",
+    sector: "Sector 1 / Ridge",
+    location: "28.7712N 76.8210E",
+    status: "online",
+    fps: 22,
+    latencyMs: 260,
+    analytics: ["human", "loitering", "face"],
+    nightMode: false,
+  },
+  {
+    id: "CHK-04-Y",
+    name: "Check Post Yankee — Yard",
+    sector: "Sector 3 / Holding Yard",
+    location: "28.7008N 76.9044E",
+    status: "offline",
+    fps: 0,
+    latencyMs: 0,
+    analytics: ["vehicle", "anpr"],
+    nightMode: false,
+  },
+];
+
+export const PLATE_POOL = [
+  "HR 26 BX 4419",
+  "PB 08 CQ 7731",
+  "RJ 14 UD 0902",
+  "JK 02 AL 5518",
+  "DL 3C AY 6620",
+  "UP 16 KT 3384",
+];
+
+export const SUSPICIOUS_MESSAGES = [
+  "Two persons loitering near fence line beyond 90s dwell threshold",
+  "Movement against approved patrol direction detected",
+  "Unattended bag left in frame for 120s",
+  "Group formation detected in restricted buffer zone",
+  "Ladder-shaped object carried toward perimeter",
+];

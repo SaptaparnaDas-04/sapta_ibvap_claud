@@ -1,0 +1,12 @@
+{
+  "name": "IBVAP — Intelligent Border Video Analytics Platform",
+  "short_name": "IBVAP",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#171d26",
+  "theme_color": "#171d26",
+  "icons": [
+    { "src": "/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/icon-512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}
